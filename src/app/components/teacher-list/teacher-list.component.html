@@ -1,0 +1,20 @@
+<h1>Hello string interpolation {{name}}</h1>
+
+
+
+
+
+<button (click)="toggleToDisplayTeachers()">Click to toggle isToDisplayTodos</button>
+<div *ngIf=isToDisplayTeachers>
+    <h3>Teachers</h3>
+    <div *ngFor="let teacherlist of teacherlists">
+        <ul>
+            <li>TeacherId: {{teacherlist.teacherId}}</li>
+            <li>Name: {{teacherlist.name}}</li>
+            <li>Lastname: {{teacherlist.lastname}}</li>
+            <li>Title: {{teacherlist.title}}</li>
+            <li>Age: {{teacherlist.age}}</li>
+            <li>IsFullTime: {{teacherlist.isFullTime}}</li>
+        </ul>
+    </div>
+</div>
